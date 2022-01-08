@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+//https://fonts.google.com/specimen/Architects+Daughter
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Baloo 2', cursive;
+    font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,95 @@
+$bg: rgba(255, 0, 0, 0.801);
+
+header {
+  text-align: center;
+  z-index: 999;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+  padding: 10vw 0 0 0;
+  @media screen and (max-width: 475px) {
+    padding: 50px 0 0 0;
+  }
+
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 17vw;
+    min-height: 78px;
+    background-image: url("./../../../shared/assets/img/bannerNav.png");
+    background-repeat: no-repeat;
+    background-position: 51% 0;
+    background-size: contain;
+    .cam {
+      position: absolute;
+      top: 12%;
+      width: 100%;
+      height: 11vw;
+      min-height: 53px;
+      background-image: url("./../../../shared/assets/img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .nav-container {
+    position: relative;
+    width: 80%;
+    min-height: 60px;
+    margin: 0 10%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      min-height: 40px;
+      margin: 0;
+    }
+
+    nav {
+      position: absolute;
+      top: -4%;
+      left: 0;
+      text-align: left;
+      width: 100%;
+      //min-height: 60px;
+      height: auto;
+      margin: 0;
+      padding: 6px 30px 12px;
+      background-image: url("./../../../shared/assets/img/bgNav.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 100%;
+      @media screen and (max-width: 768px) {
+        padding: 6px 0 12px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        li {
+          margin: 0 20px;
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            &:hover {
+              color: gray;
+            }
+            @media screen and (max-width: 465px) {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

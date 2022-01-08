@@ -12,5 +12,5 @@ export type ModuleType = {
         element: JSX.Element
     },
     name: string,
-    pages: PageType[] | ModuleType[]
+    pages: PageType[]
 }

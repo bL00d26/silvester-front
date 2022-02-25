@@ -3,6 +3,7 @@ import { ModuleType } from "../../shared/types";
 import Layout from "./layout";
 import ContactUs from "./pages/ContactUs";
 import MainView from "./pages/MainView";
+import Shop from "./pages/Shop";
 
 const User = () => {
   return (
@@ -32,6 +33,13 @@ const UserModule: ModuleType = {
         element: <ContactUs />,
       },
       name: "ContactUs",
+    },
+    {
+      routeProps: {
+        path: "/reptiles-en-venta",
+        element: <Shop />,
+      },
+      name: "Reptiles en venta",
     },
   ],
 };

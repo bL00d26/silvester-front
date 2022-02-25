@@ -1,0 +1,30 @@
+main {
+  max-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.carousel {
+  border-radius: 15px;
+  border: 5px solid #333;
+  padding: 0;
+
+  &-inner {
+    border-radius: 10px;
+  }
+  &-control-next {
+    &-icon {
+      background-image: url(./shared/assets/img/arrow.png) !important;
+      transform: rotate(180deg);
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &-control-prev {
+    &-icon {
+      background-image: url(./shared/assets/img/arrow.png) !important;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

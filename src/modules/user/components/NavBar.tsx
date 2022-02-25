@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./../styles/navBar.scss";
 
 export default function NavBar() {
@@ -10,22 +11,22 @@ export default function NavBar() {
         <nav>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a href="#">Reptiles en Venta</a>
+              <Link to="/reptiles-en-venta">Reptiles en Venta</Link>
             </li>
             <li>
-              <a href="#">Centro de Aprendizaje</a>
+              <Link to="/centro-de-aprendizaje">Centro de Aprendizaje</Link>
             </li>
             <li>
-              <a href="#">Colección</a>
+              <Link to="/coleccion">Colección</Link>
             </li>
             <li>
-              <a href="#">Condiciones de Envío</a>
+              <Link to="/condiciones-de-envio">Condiciones de Envío</Link>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <Link to="/contacto">Contacto</Link>
             </li>
           </ul>
         </nav>

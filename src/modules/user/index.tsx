@@ -28,7 +28,7 @@ const UserModule: ModuleType = {
     },
     {
       routeProps: {
-        path: "/contact",
+        path: "/contacto",
         element: <ContactUs />,
       },
       name: "ContactUs",

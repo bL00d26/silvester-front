@@ -4,6 +4,7 @@ import NotFound from './shared/components/NotFound';
 import modules from "./modules";
 
 function App() {
+  console.log(modules);
   return (
     <>
       <Router>

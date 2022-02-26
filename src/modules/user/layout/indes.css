@@ -1,0 +1,10 @@
+.main-content {
+  background-image: url("https://theurbanreptile.com/wp-content/uploads/2021/02/Asset-2@2x.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main-content main {
+  height: auto;
+}/*# sourceMappingURL=indes.css.map */

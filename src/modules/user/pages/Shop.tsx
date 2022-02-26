@@ -19,7 +19,7 @@ export default function Shop() {
                             <a className="add-to-cart" href="">Comprar</a>
                         </div>
                         <div className="product-content">
-                            <h3 className="title"><a href="#">Women's Designer Top</a></h3>
+                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
                             <span className="price">$599.99</span>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export default function Shop() {
                             <a className="add-to-cart" href="">Comprar</a>
                         </div>
                         <div className="product-content">
-                            <h3 className="title"><a href="#">Women's Designer Top</a></h3>
+                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
                             <span className="price">$599.99</span>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default function Shop() {
                             <a className="add-to-cart" href="">Comprar</a>
                         </div>
                         <div className="product-content">
-                            <h3 className="title"><a href="#">Women's Designer Top</a></h3>
+                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
                             <span className="price">$599.99</span>
                         </div>
                     </div>

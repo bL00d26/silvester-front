@@ -13,8 +13,16 @@ export default function NavBar() {
             <li>
               <Link to="/">Inicio</Link>
             </li>
-            <li>
-              <Link to="/reptiles-en-venta">Reptiles en Venta</Link>
+            <li className="dropdown">
+              <button className="desplegable dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <Link to="/reptiles-en-venta">Reptiles en Venta</Link>
+              </button>
+              <div className="desplegable-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <Link className="dropdown-item" to="/geckos-leopardo">Geckos leopardo</Link>
+                <Link className="dropdown-item" to="/geckos-con-cresta">Geckos con cresta</Link>
+                <Link className="dropdown-item" to="/dragones-barbudos">Dragones barbudos</Link>
+                <Link className="dropdown-item" to="/lagartos-especiales">Lagartos especiales</Link>
+              </div>
             </li>
             <li>
               <Link to="/centro-de-aprendizaje">Centro de Aprendizaje</Link>

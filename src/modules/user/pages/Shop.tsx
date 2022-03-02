@@ -1,86 +1,164 @@
 import Container from "react-bootstrap/Container";
+import ProductCard from "../components/ProductCard/ProductCard";
 
 
 export default function Shop() {
+
+    const productArr = [
+        {
+            id: "1",
+            code: "TRS-SD2-FT2",
+            title: "Lagarto de sombra",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "2",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: false
+        },
+        {
+            id: "3",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "4",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: false
+        },
+        {
+            id: "5",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: false
+        },
+        {
+            id: "6",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "7",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "8",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "9",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "10",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        },
+        {
+            id: "11",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: false
+        },
+        {
+            id: "12",
+            code: "MAS-SD2-FT2",
+            title: "Lagarto Prueba 2",
+            description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            price: 100.0,
+            previewImages: [
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21A5.jpg",
+                "https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2022/01/TUR-BD-21B2.jpg"
+            ],
+            available: true
+        }
+    ]
+
     return (
         <Container className="px-3">
-            <div className="row gx-3">
-                <div className="col-md-3 col-sm-6">
-                    <div className="product-grid2 card">
-                        <div className="product-image2">
-                            <a href="#">
-                                <img className="pic-1" src="https://geckosetc.com/wp-content/uploads/2022/02/NHTF3143_B39_115_20_1200-800x534.jpg" />
-                                <img className="pic-2" src="https://geckosetc.com/wp-content/uploads/2022/02/WKF6737_LEye_20_1200-800x535.jpg" />
-                            </a>
-                            <ul className="social">
-                                <li><a href="#" data-tip="Vista rápida"><i className="bi bi-eye"></i></a></li>
-                                <li><a href="#" data-tip="Comprar"><i className="bi bi-cart-plus" /></a></li>
-                            </ul>
-                            <a className="add-to-cart" href="">Comprar</a>
-                        </div>
-                        <div className="product-content">
-                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
-                            <span className="price">$599.99</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6">
-                    <div className="product-grid2 card">
-                        <div className="product-image2">
-                            <a href="#">
-                                <img className="pic-1" src="https://geckosetc.com/wp-content/uploads/2022/02/NHTF3143_B39_115_20_1200-800x534.jpg" />
-                                <img className="pic-2" src="https://geckosetc.com/wp-content/uploads/2022/02/WKF6737_LEye_20_1200-800x535.jpg" />
-                            </a>
-                            <ul className="social">
-                                <li><a href="#" data-tip="Vista rápida"><i className="bi bi-eye"></i></a></li>
-                                <li><a href="#" data-tip="Comprar"><i className="bi bi-cart-plus" /></a></li>
-                            </ul>
-                            <a className="add-to-cart" href="">Comprar</a>
-                        </div>
-                        <div className="product-content">
-                            <h3 className="title"><a href="#">Women's Yellow Top</a></h3>
-                            <span className="price">$699.99</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6">
-                    <div className="product-grid2 card">
-                        <div className="product-image2">
-                            <a href="#">
-                                <img className="pic-1" src="https://geckosetc.com/wp-content/uploads/2022/02/NHTF3143_B39_115_20_1200-800x534.jpg" />
-                                <img className="pic-2" src="https://geckosetc.com/wp-content/uploads/2022/02/WKF6737_LEye_20_1200-800x535.jpg" />
-                            </a>
-                            <ul className="social">
-                                <li><a href="#" data-tip="Vista rápida"><i className="bi bi-eye"></i></a></li>
-                                <li><a href="#" data-tip="Comprar"><i className="bi bi-cart-plus" /></a></li>
-                            </ul>
-                            <a className="add-to-cart" href="">Comprar</a>
-                        </div>
-                        <div className="product-content">
-                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
-                            <span className="price">$599.99</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6">
-                    <div className="product-grid2 card">
-                        <div className="product-image2">
-                            <a href="#">
-                                <img className="pic-1" src="https://geckosetc.com/wp-content/uploads/2022/02/NHTF3143_B39_115_20_1200-800x534.jpg" />
-                                <img className="pic-2" src="https://geckosetc.com/wp-content/uploads/2022/02/WKF6737_LEye_20_1200-800x535.jpg" />
-                            </a>
-                            <ul className="social">
-                                <li><a href="#" data-tip="Vista rápida"><i className="bi bi-eye"></i></a></li>
-                                <li><a href="#" data-tip="Comprar"><i className="bi bi-cart-plus" /></a></li>
-                            </ul>
-                            <a className="add-to-cart" href="">Comprar</a>
-                        </div>
-                        <div className="product-content">
-                            <h3 className="title"><a href="#">Reptil ejemplar</a></h3>
-                            <span className="price">$599.99</span>
-                        </div>
-                    </div>
-                </div>
+            <div className="card-deck row gx-3 gy-3">
+                {
+                    productArr.map((product, index) => (
+                        <ProductCard key={index} product={product} />
+                    ))
+                }
             </div>
         </Container>
     )

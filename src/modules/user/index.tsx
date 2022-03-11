@@ -2,9 +2,11 @@ import { Outlet } from "react-router-dom";
 import { ModuleType } from "../../shared/types";
 import Layout from "./layout";
 import ContactUs from "./pages/ContactUs";
+import LearningCenter from "./pages/LearningCenter";
 import MainView from "./pages/MainView";
 import Product from "./pages/Product";
 import Shop from "./pages/Shop";
+import TermsAndFAQ from "./pages/TermsAndFAQ";
 
 const User = () => {
   return (
@@ -41,6 +43,20 @@ const UserModule: ModuleType = {
         element: <Shop />,
       },
       name: "Reptiles en venta",
+    },
+    {
+      routeProps: {
+        path: "/centro-de-aprendizaje",
+        element: <LearningCenter />,
+      },
+      name: "Centro de Aprendizaje",
+    },
+    {
+      routeProps: {
+        path: "/condiciones-de-envio",
+        element: <TermsAndFAQ />,
+      },
+      name: "Condiciones de envio",
     },
     {
       routeProps: {

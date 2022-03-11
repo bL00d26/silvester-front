@@ -161,7 +161,7 @@ export default function MainView() {
 
                 <Row>
                     <Col lg={4} className="">
-                        <img className="img-thumbnail background-cover h-100" src="https://lh3.googleusercontent.com/p/AF1QipODIS2B58KhB06CRpTYXjU9CqaZNEoOK67dsscU=s1280-p-no-v1" alt="" />
+                        <img className="img-thumbnail background-cover h-100" src="https://eoc.cat/wp-content/uploads/2019/09/patologias-de-los-reptiles.jpg" alt="" />
                     </Col>
                     <Col lg={8}>
                         <Card className={"p-4 h-100 bordered"}>

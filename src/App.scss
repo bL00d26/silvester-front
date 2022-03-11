@@ -28,3 +28,48 @@ main {
     }
   }
 }
+
+.termsAndFaq {
+  h4 {
+    padding: 10px;
+    .buttonAccordion {
+      cursor: pointer;
+      font-size: 2.5rem;
+      outline: none!important;
+      -webkit-tap-highlight-color: transparent!important;
+      &:focus {
+        outline: none!important;
+        -webkit-tap-highlight-color: transparent!important;
+      }
+    }
+  }
+
+  .accordion-body{
+    padding: 15px 20px 20px 30px;
+  }
+}
+
+
+.contactPage{
+  .mainImg{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+.formContact{
+  form{
+    padding: 20px;
+    label{
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    input,
+    textarea{
+      font-size: 2rem;
+    }
+    button{
+      font-size: 2rem;
+    }
+  }
+}

@@ -78,6 +78,7 @@ main {
     padding: 40px 0;
     font-family: "Open Sans", sans-serif;
     background-color: #fff;
+    border-radius: 10px;
   }
   .main-heading {
     font-size: 19px;
@@ -272,6 +273,7 @@ main {
 
 .checkoutPage {
   background-color: #fff;
+  border-radius: 10px;
   
   .panel-heading {
     background: #4dd875;
@@ -618,6 +620,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  img{
+    z-index: 1;
+  }
   small{
     background: red;
     position: absolute;

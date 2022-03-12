@@ -7,6 +7,8 @@ import MainView from "./pages/MainView";
 import Product from "./pages/Product";
 import Shop from "./pages/Shop";
 import TermsAndFAQ from "./pages/TermsAndFAQ";
+import ShoppingCart from "./pages/ShoppingCart";
+import Checkout from "./pages/Checkout";
 
 const User = () => {
   return (
@@ -34,6 +36,20 @@ const UserModule: ModuleType = {
       routeProps: {
         path: "/contacto",
         element: <ContactUs />,
+      },
+      name: "ContactUs",
+    },
+    {
+      routeProps: {
+        path: "/carrito-de-compras",
+        element: <ShoppingCart />,
+      },
+      name: "ContactUs",
+    },
+    {
+      routeProps: {
+        path: "/detalles-del-pedido",
+        element: <Checkout />,
       },
       name: "ContactUs",
     },

@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./../styles/navBar.scss";
-
+import cartImg from '../../../assets/img/cart-regular-24.png'
 export default function NavBar() {
   return (
     <header>
+      <Link to="/carrito-de-compras" className="shooppingCartButton">
+          <img src={cartImg} alt="" />
+          <small>32</small>
+      </Link>
       <div className="logo">
         <div className="cam"></div>
       </div>

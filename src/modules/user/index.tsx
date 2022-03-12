@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { ModuleType } from "../../shared/types";
 import Layout from "./layout";
+import ArticlePage from "./pages/ArticlePage";
 import ContactUs from "./pages/ContactUs";
 import LearningCenter from "./pages/LearningCenter";
 import MainView from "./pages/MainView";
@@ -48,6 +49,13 @@ const UserModule: ModuleType = {
       routeProps: {
         path: "/centro-de-aprendizaje",
         element: <LearningCenter />,
+      },
+      name: "Centro de Aprendizaje",
+    },
+    {
+      routeProps: {
+        path: "/centro-de-aprendizaje/:id",
+        element: <ArticlePage />,
       },
       name: "Centro de Aprendizaje",
     },

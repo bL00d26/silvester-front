@@ -94,7 +94,7 @@ export default function ShoppingCart() {
                                     <form action="#" method="get" acceptCharset="utf-8">
                                         <div className="coupon-input">
                                             <input type="text" name="coupon code" placeholder="Código del cupón" />
-                                            <button type="submit" className="round-black-btn">Aplicar cupón</button>
+                                            <button type="submit" className="round-black-btn btn-success">Aplicar cupón</button>
                                         </div>
                                     </form>
                                 </div>

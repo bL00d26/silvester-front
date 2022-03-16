@@ -63,6 +63,13 @@ const UserModule: ModuleType = {
     },
     {
       routeProps: {
+        path: "/reptiles-en-venta/:slug",
+        element: <Shop />,
+      },
+      name: "Reptiles en venta",
+    },
+    {
+      routeProps: {
         path: "/centro-de-aprendizaje",
         element: <LearningCenter />,
       },

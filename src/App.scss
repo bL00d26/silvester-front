@@ -30,6 +30,14 @@ main {
 }
 
 .termsAndFaq {
+  .terms {
+    background: #4dd875;
+    border-radius: 20px;
+    font-weight: bold;
+    h1 {
+      font-size: 3rem;
+    }
+  }
   h4 {
     padding: 10px;
     .buttonAccordion {
@@ -46,6 +54,7 @@ main {
 
   .accordion-body {
     padding: 15px 20px 20px 30px;
+    font-size: 1.8rem;
   }
 }
 
@@ -57,15 +66,38 @@ main {
   }
 }
 .formContact {
+  background: #7ce09a;
+  border: 5px solid rgb(5, 44, 20);
+  padding: 10px;
+  border-radius: 20px;
+  .no-bg {
+    background: none;
+    border: none;
+  }
+  .details {
+    h4 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
   form {
     padding: 20px;
     label {
       font-size: 2rem;
       margin-bottom: 5px;
+      color: #000;
+      font-weight: bold;
     }
     input,
     textarea {
       font-size: 2rem;
+      background: rgba(255, 255, 255, 0.918);
+      border: 3px solid rgb(2, 100, 35);
+      border-radius: 10px;
     }
     button {
       font-size: 2rem;
@@ -208,11 +240,11 @@ main {
   }
   .round-black-btn {
     border-radius: 25px;
-    background: #212529;
+    background: #0dbd79;
     color: #fff;
     padding: 8px 35px;
     display: inline-block;
-    border: solid 2px #212529;
+    border: solid 2px #069954;
     transition: all 0.5s ease-in-out 0s;
     cursor: pointer;
   }
@@ -274,22 +306,23 @@ main {
 .checkoutPage {
   background-color: #fff;
   border-radius: 10px;
-  
+
   .panel-heading {
-    background: #4dd875;
+    background: #1bbb6b;
     padding: 10px 20px;
     margin-bottom: 10px;
     text-align: center;
-    border-radius: 10px!important;
+    border-radius: 10px !important;
     overflow: hidden;
-    a{
+    a {
       text-decoration: none;
-      color: #Fff;
+      color: #fff;
     }
   }
-  form{
+  form {
     input {
       padding: 8px 14px;
+      border-radius: 8px!important;
     }
   }
   .steps {
@@ -608,8 +641,7 @@ main {
 }*/
 }
 
-
-.shooppingCartButton{
+.shooppingCartButton {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -620,12 +652,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
   cursor: pointer;
-  img{
+  img {
     z-index: 1;
   }
-  small{
-    background: red;
+  small {
+    background: #0bad5c;
     position: absolute;
     top: 6px;
     right: 6px;
@@ -639,5 +672,19 @@ main {
     color: #fff;
     font-weight: 600;
     font-size: 1.1rem;
+    z-index: 1;
   }
+}
+
+.learning-center {
+  .button-learning {
+    font-size: 1.6rem;
+  }
+}
+
+.footer {
+  margin-bottom: 0;
+}
+.main-content {
+  padding-bottom: 10px;
 }

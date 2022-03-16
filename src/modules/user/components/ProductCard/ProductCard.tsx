@@ -18,7 +18,7 @@ interface ProductProps {
 const ProductCard: FC<ProductProps> = ({ product }) => {
     const { id, title, price, previewImages, code, available } = product;
     return (
-        <div className="col-3">
+        <div className="col-3 animate__animated animate__bounce">
             <div className={`product-grid card  ${available ? '' : 'sold-out'}`}>
                 <div className="product-image">
                     <Link to={`/product/${id}`} className="image-container">

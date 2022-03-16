@@ -2,14 +2,14 @@ import { Container } from "react-bootstrap";
 
 export default function ContactUs() {
     return (
-        <Container className="contactPage">
+        <Container className="contactPage animate__animated animate__bounce" >
 
             <div className="text-center mb-4">
                 <img className="img-thumbnails mainImg"src="https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2020/10/Asset-17.png?w=937&ssl=1" alt="" />
             </div>
 
             <div className="row mt-5 formContact">
-                <div className="col-md-3 order-md-2 mb-4 card py-4 h-100" style={{padding: "30px"}}>
+                <div className="no-bg details col-md-3 order-md-2 mb-4 card py-4 h-100" style={{padding: "30px"}}>
                     <h4 className="d-flex justify-content-between align-items-center mb-3">
                         Mailing Address:
                     </h4>
@@ -20,7 +20,7 @@ export default function ContactUs() {
                         info@theurbanreptile.com
                     </p>
                 </div>
-                <div className="col-md-9 order-md-1 card" style={{padding: "0 20px"}}>
+                <div className="no-bg col-md-9 order-md-1 card" style={{padding: "0 20px"}}>
                     <h1 style={{padding: "30px 20px 0px 20px", fontSize: "4rem"}}>Contactanos, nos encataría escuchar acerca de ti</h1>
                     <form className="needs-validation">
                         <div className="row">
@@ -48,7 +48,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <label htmlFor="email">Correo <span className="text-muted">(Optional)</span></label>
+                                <label htmlFor="email">Correo</label>
                                 <input type="email" className="form-control" id="email" placeholder="contacto@empresa.com" />
                                 <div className="invalid-feedback">
                                     Please enter a valid email address for shipping updates.

@@ -22,17 +22,14 @@ export default function NavBar() {
                 <Link to="/reptiles-en-venta">Reptiles en Venta</Link>
               </button>
               <div className="desplegable-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <Link className="dropdown-item" to="/geckos-leopardo">Geckos leopardo</Link>
-                <Link className="dropdown-item" to="/geckos-con-cresta">Geckos con cresta</Link>
-                <Link className="dropdown-item" to="/dragones-barbudos">Dragones barbudos</Link>
-                <Link className="dropdown-item" to="/lagartos-especiales">Lagartos especiales</Link>
+                <Link className="dropdown-item" to="/reptiles-en-venta/geckos-leopardo">Geckos leopardo</Link>
+                <Link className="dropdown-item" to="/reptiles-en-venta/geckos-con-cresta">Geckos con cresta</Link>
+                <Link className="dropdown-item" to="/reptiles-en-venta/dragones-barbudos">Dragones barbudos</Link>
+                <Link className="dropdown-item" to="/reptiles-en-venta/lagartos-especiales">Lagartos especiales</Link>
               </div>
             </li>
             <li>
               <Link to="/centro-de-aprendizaje">Centro de Aprendizaje</Link>
-            </li>
-            <li>
-              <Link to="/coleccion">Colección</Link>
             </li>
             <li>
               <Link to="/condiciones-de-envio">Condiciones de Envío</Link>

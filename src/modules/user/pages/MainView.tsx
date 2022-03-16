@@ -3,33 +3,38 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MainCarousel from "../components/MainCarousel/Carousel";
 import { Card, Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function MainView() {
     return (
         <Container>
             <Stack gap={5}>
-                <Row>
+                <Row className="animate__animated animate__bounce">
                     <MainCarousel />
                 </Row>
                 <Row>
-                    <Col className="aspect" sm={4}>
-                        <Card className="overflow-hidden">
-                            <img src="https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2020/10/Up-to-date-option.png?w=304&ssl=1" alt="" />
-                        </Card>
+                    <Col className="aspect animate__animated animate__pulse" sm={4}>
+                        <Link to="/centro-de-aprendizaje">
+                            <Card className="overflow-hidden">
+                                <img src="https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2020/10/Up-to-date-option.png?w=304&ssl=1" alt="" />
+                            </Card>
+                        </Link>
                     </Col>
-                    <Col className="aspect" sm={4}>
+                    <Col className="aspect animate__animated animate__pulse" sm={4}>
                         <Card className="iframeContainer overflow-hidden">
                             <iframe src="https://www.youtube.com/embed/xLJLQodOeTo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                         </Card>
                     </Col>
-                    <Col className="aspect" sm={4}>
+                    <Col className="aspect animate__animated animate__pulse" sm={4}>
                         <Card className="overflow-hidden">
-                            <img src="https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2020/10/Learning-Center-Image.png?w=304&ssl=1" alt="" />
+                            <Link to="/centro-de-aprendizaje">
+                                <img src="https://i0.wp.com/theurbanreptile.com/wp-content/uploads/2020/10/Learning-Center-Image.png?w=304&ssl=1" alt="" />
+                            </Link>
                         </Card>
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} className="animate__animated animate__fadeInUp">
                         <Card className={"p-4 bordered"}>
                             <h1>Bienvenido a Silvester Company®</h1>
 
@@ -56,7 +61,7 @@ export default function MainView() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={8} className="animate__animated animate__fadeInUp">
                         <Card className={"p-4 h-100 bordered"}>
                             <h1>Historia</h1>
 
@@ -70,13 +75,13 @@ export default function MainView() {
                             </p>
                         </Card>
                     </Col>
-                    <Col lg={4} className="">
+                    <Col lg={4} className="animate__animated animate__fadeInUp">
                         <img className="img-thumbnail background-cover h-100" src="https://eoc.cat/wp-content/uploads/2019/09/patologias-de-los-reptiles.jpg" alt="" />
                     </Col>
                 </Row>
 
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} className="animate__animated animate__fadeInUp">
                         <Card className={"p-4 h-100 bordered text-center"}>
                             <h1>Conoce a nuestro Equipo:</h1>
 
@@ -135,7 +140,7 @@ export default function MainView() {
 
 
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={8} className="animate__animated animate__fadeInUp">
                         <Card className={"p-4 h-100 bordered"}>
                             <h1>Nuestro Criadero</h1>
 
@@ -153,17 +158,17 @@ export default function MainView() {
                             </p>
                         </Card>
                     </Col>
-                    <Col lg={4} className="">
+                    <Col lg={4} className="animate__animated animate__fadeInUp">
                         <img className="img-thumbnail background-cover w-100 h-100" src="https://i.pinimg.com/474x/24/50/15/24501537dc0027ef6bfe564617e77e69.jpg" alt="" />
                     </Col>
                 </Row>
 
 
                 <Row>
-                    <Col lg={4} className="">
+                    <Col lg={4} className="animate__animated animate__fadeInUp">
                         <img className="img-thumbnail background-cover h-100" src="https://eoc.cat/wp-content/uploads/2019/09/patologias-de-los-reptiles.jpg" alt="" />
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={8} className="animate__animated animate__fadeInUp">
                         <Card className={"p-4 h-100 bordered"}>
                             <h1>NUESTROS REPTILES:</h1>
 
@@ -182,7 +187,7 @@ export default function MainView() {
                     </Col>
                 </Row>
 
-                <Row className="card text-center">
+                <Row className="card text-center animate__animated animate__fadeInUp">
                     <h1>Algunos de nuestros reptiles</h1>
 
                     <Col lg={12}>

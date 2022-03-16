@@ -9,8 +9,8 @@ export default function TermsAndFAQ() {
     }
     return (
         <Container className="termsAndFaq">
-            <div className="py-4 pb-4 text-center card">
-                <h2>TERMINOS Y CONDICIONES / Preguntas frecuentes</h2>
+            <div className="terms py-4 pb-4 text-center card">
+                <h1>TERMINOS Y CONDICIONES / Preguntas frecuentes</h1>
             </div>
 
             <div className="accordion" id="accordionExample" style={{ padding: "20px 10px" }}>

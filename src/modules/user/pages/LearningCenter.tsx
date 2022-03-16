@@ -8,14 +8,14 @@ import data from '../temp/temporal_data.json'
 export default function LearningCenter() {
     const news = data.learning_center.news;
     return (
-        <Container>
-            <Stack gap={5} className="bordered" style={{ background: "#4dd875", padding: "10px" }}>
+        <Container className="learning-center">
+            <Stack gap={5} className="bordered" style={{ padding: "10px" }}>
 
-                <Row className="text-center mt-4">
+                <Row className="text-center mt-4 animate__animated animate__flipInX">
                     <h1 style={{ color: "#fff" }}>CENTRO DE APRENDIZAJE DE SILVESTER COMPANY®</h1>
                 </Row>
-                <Row>
-                    <Col lg={8} >
+                <Row className="animate__animated animate__flipInX">
+                    <Col lg={8}  >
                         <Card className={"p-4 h-100 bordered"}>
                             <h2>
                                 Bienvenido al Centro de Aprendizaje de Reptiles Urbanos. Aquí encontrará información útil sobre la comprensión de la genética, el cuidado y la cría de Geckos leopardo y Geckos crestados. Vuelve pronto para ver nuevos artículos sobre dragones barbudos y otros reptiles.
@@ -30,7 +30,7 @@ export default function LearningCenter() {
                 <Row>
                     {
                         news.map(({ id, title, image, description, link }) => (
-                            <Col lg={12} key={id} className="mb-3">
+                            <Col lg={12} key={id} className="mb-3 animate__animated animate__flipInX">
                                 <Card className={"p-4 h-100 bordered text-center"}>
                                     <Row>
                                         <Col lg={4}>
@@ -40,7 +40,7 @@ export default function LearningCenter() {
                                         <Col lg={8} style={{ textAlign: 'left' }} >
                                             <h1>{title}</h1>
                                             <p dangerouslySetInnerHTML={{ __html: description }}></p>
-                                            <Link to={link}>Leer más</Link>
+                                            <Link className="button-learning btn btn-success" to={link}>Leer más</Link>
                                         </Col>
                                     </Row>
                                 </Card>

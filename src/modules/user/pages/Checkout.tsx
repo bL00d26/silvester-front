@@ -64,17 +64,7 @@ export default function Checkout() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="panel panel-default">
-                                        <div className="panel">
-                                            <h4 className="panel-title">
-                                                <div style={{ textAlign: 'center', width: '100%' }}>
-                                                    <a style={{ width: 'fit-content', fontSize: '1.3rem', borderRadius: '8px' }} data-toggle="collapse" data-parent="#accordion" className=" btn btn-success" >
-                                                        Continuar con la información de pago
-                                                    </a>
-                                                </div>
-                                            </h4>
-                                        </div>
-                                    </div>
+
                                     <div className="panel panel-default">
                                         <div className="panel-heading">
                                             <h4 className="panel-title">
@@ -151,9 +141,9 @@ export default function Checkout() {
                                             <h4 className="panel-title">
                                                 <div style={{ textAlign: 'center' }}>
                                                     <a data-toggle="collapse" data-parent="#accordion"
-                                                        className=" btn btn-success"
+                                                        className=" btn"
                                                         id="payInfo"
-                                                        style={{ width: 'fit-content', fontSize: '1.3rem', borderRadius: "8px" }}>
+                                                        style={{ background: "#1bbb6b", color: "#fff", width: 'fit-content', fontSize: '1.65rem', borderRadius: "8px" }}>
                                                         Realizar el pedido »
                                                     </a>
                                                 </div>

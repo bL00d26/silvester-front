@@ -7,7 +7,7 @@ import MainView from "./pages/MainView"
 import ProductsList from "./pages/ProductsList"
 import SalesList from "./pages/SalesList"
 import ShopDetails from "./pages/ShopDetails"
-
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 function Admin() {
     return (
         <Layout>

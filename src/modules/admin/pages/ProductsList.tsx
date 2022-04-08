@@ -1,12 +1,12 @@
 import Content from "../components/Content";
-import { CreateProductModal } from "../components/CreateProductModal";
+import { ProductModal } from "../components/ProductModal";
+import { SeeProductModal } from "../components/SeeProductModal";
 
 export default function ProductsList() {
     return (
         <Content title="Lista de ventas">
             <div className="row">
                 <section className="content">
-                    {/* Default box */}
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">Productos</h3>
@@ -80,21 +80,21 @@ export default function ProductsList() {
                                                     <span className="badge badge-success">Activo</span>
                                                 </td>
                                                 <td className="project-actions text-right">
-                                                    <a className="btn btn-primary btn-sm" href="#">
+                                                    <button className="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-see">
                                                         <i className="fas fa-folder">
                                                         </i>
-                                                        View
-                                                    </a>
-                                                    <a className="btn btn-info btn-sm" href="#">
+                                                        Ver
+                                                    </button>
+                                                    <button className="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-xl">
                                                         <i className="fas fa-pencil-alt">
                                                         </i>
-                                                        Edit
-                                                    </a>
-                                                    <a className="btn btn-danger btn-sm" href="#">
+                                                        Editar
+                                                    </button>
+                                                    <button className="btn btn-danger btn-sm">
                                                         <i className="fas fa-trash">
                                                         </i>
-                                                        Delete
-                                                    </a>
+                                                        Eliminar
+                                                    </button>
                                                 </td>
                                             </tr>
                                         ))
@@ -102,12 +102,11 @@ export default function ProductsList() {
                                 </tbody>
                             </table>
                         </div>
-                        {/* /.card-body */}
                     </div>
-                    {/* /.card */}
                 </section>
 
-                <CreateProductModal />
+                <ProductModal />
+                <SeeProductModal />
             </div>
         </Content>
     )

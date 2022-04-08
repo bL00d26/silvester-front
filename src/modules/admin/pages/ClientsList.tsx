@@ -19,7 +19,6 @@ export default function ClientsList() {
                                 </div>
                             </div>
                         </div>
-                        {/* /.card-header */}
                         <div className="card-body table-responsive p-0" style={{ height: '500px' }}>
                             <table className="table table-striped projects">
                                 <thead>

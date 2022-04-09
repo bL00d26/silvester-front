@@ -10,6 +10,7 @@ import Shop from "./pages/Shop";
 import TermsAndFAQ from "./pages/TermsAndFAQ";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
+import PaymentConfirmation from "./pages/PaymentConfirmation";
 
 const User = () => {
   return (
@@ -46,6 +47,13 @@ const UserModule: ModuleType = {
         element: <ShoppingCart />,
       },
       name: "ContactUs",
+    },
+    {
+      routeProps: {
+        path: "/confirmacion-de-pago",
+        element: <PaymentConfirmation />,
+      },
+      name: "Confirmación de pago",
     },
     {
       routeProps: {

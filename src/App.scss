@@ -30,19 +30,20 @@ main {
 }
 
 .termsAndFaq {
+  font-size: 15px!important;
   .terms {
     background: #4dd875;
     border-radius: 20px;
     font-weight: bold;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
   h4 {
     padding: 10px;
     .buttonAccordion {
       cursor: pointer;
-      font-size: 2.5rem;
+      font-size: 2rem;
       outline: none !important;
       -webkit-tap-highlight-color: transparent !important;
       &:focus {
@@ -322,7 +323,32 @@ main {
   form {
     input {
       padding: 8px 14px;
-      border-radius: 8px!important;
+      border-radius: 8px !important;
+    }
+
+    .finalList {
+      li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid rgba(51, 51, 51, 0.315);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        padding: 20px 0;
+
+        .buttons {
+          cursor: pointer;
+          width: fit-content;
+        }
+        img {
+          border: 2px;
+        }
+      }
+      li:first-child {
+        border-top: 2px solid rgba(51, 51, 51, 0.315);
+      }
     }
   }
   .steps {
@@ -639,6 +665,25 @@ main {
         overflow-x: hidden;
     }
 }*/
+}
+
+.PaymentConfirmation {
+  background: #fff;
+  border-radius: 20px;
+
+  .mainContentWrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &.yape-container {
+    background: #541365;
+
+    * {
+      color: #fff;
+    }
+  }
 }
 
 .shooppingCartButton {

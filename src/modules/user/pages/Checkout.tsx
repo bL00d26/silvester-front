@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Checkout() {
     return (
@@ -137,15 +138,47 @@ export default function Checkout() {
                                         </div>
                                     </div>
                                     <div className="panel panel-default">
+                                        <div className="panel-heading">
+                                            <h4 className="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" >¿Cómo quieres pagar?</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" className="panel-collapse collapsed">
+                                            <div className="panel-body">
+                                                <ul className="finalList">
+                                                    <li>
+                                                        <div><input id="yape" type="radio" name="yape" /></div>
+                                                        <label htmlFor="yape" className="buttons">
+                                                            <img src="https://imgur.com/b0BP318.png" className="background-primary" width="100px" alt="" />
+                                                            <h4>Yape del BCP</h4>
+                                                            <p>Paga desde la aplicación Yape del BCP</p>
+                                                        </label>
+
+                                                    </li>
+                                                    <li>
+                                                        <div><input id="plin" type="radio" name="yape" /></div>
+                                                        <label htmlFor="plin" className="buttons">
+                                                            <img src="https://imgur.com/6BSFhOx.png" className="background-primary" width="100px" alt="" />
+                                                            <h4>Plin</h4>
+                                                            <p>Paga desde la aplicación Plin</p>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                                {/*  */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="panel panel-default">
                                         <div className="panel">
                                             <h4 className="panel-title">
                                                 <div style={{ textAlign: 'center' }}>
-                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                    <Link to="/confirmacion-de-pago" data-toggle="collapse" data-parent="#accordion"
                                                         className=" btn"
                                                         id="payInfo"
                                                         style={{ background: "#1bbb6b", color: "#fff", width: 'fit-content', fontSize: '1.65rem', borderRadius: "8px" }}>
-                                                        Realizar el pedido »
-                                                    </a>
+                                                        Proceder con el pago »
+                                                    </Link>
                                                 </div>
                                             </h4>
                                         </div>

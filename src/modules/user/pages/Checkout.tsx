@@ -72,68 +72,11 @@ export default function Checkout() {
                                                 <a data-toggle="collapse" data-parent="#accordion" >Información del contacto</a>
                                             </h4>
                                         </div>
-                                        <div id="collapseTwo" className="panel-collapse collapsed">
-                                            <div className="panel-body">
-                                                <b>Ayudanos a mantener tu pedido seguro, coloca tu información exacta</b>
+                                        <div id="collapseTwo" className="panel-collapse collapsed d-flex justify-content-center">
+                                            <div className="card card-body col-6 text-center">
+                                                <b>Por favor registrate para poder realizar el pedido.</b>
                                                 <br /><br />
-                                                <table className="table table-striped" style={{ fontWeight: 'bold' }}>
-                                                    <tbody><tr>
-                                                        <td style={{ width: '175px' }}>
-                                                            <label htmlFor="id_email">Email:</label></td>
-                                                        <td>
-                                                            <input className="form-control" id="id_email" name="email" type="text" />
-                                                        </td>
-                                                    </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_first_name">Nombres:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_first_name" name="first_name" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_last_name">Apellidos:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_last_name" name="last_name" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_address_line_1">Dirección:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_address_line_1" name="address_line_1" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_address_line_2">Calle / Av  #:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_address_line_2" name="address_line_2" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_city">Ciudad:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_city" name="city" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_postalcode">Distrito:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_postalcode" name="postalcode" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style={{ width: '175px' }}>
-                                                                <label htmlFor="id_phone">Teléfono:</label></td>
-                                                            <td>
-                                                                <input className="form-control" id="id_phone" name="phone" type="text" />
-                                                            </td>
-                                                        </tr>
-                                                    </tbody></table>
+                                                <button className="btn btn-primary rounded mb-3">Registrarme ahora</button>
                                             </div>
                                         </div>
                                     </div>

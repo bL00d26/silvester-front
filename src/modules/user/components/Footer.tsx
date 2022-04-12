@@ -27,23 +27,22 @@ const Footer = () => {
                 <div className="col-6 col-md">
                     <h5>Reptiles</h5>
                     <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#">Reptiles en venta</a></li>
-                        <li><a className="text-muted" href="#">Centro de aprendizaje</a></li>
-                        <li><a className="text-muted" href="#">Colección</a></li>
+                        <li><Link className="text-muted" to="/reptiles-en-venta">Reptiles en venta</Link></li>
+                        <li><Link className="text-muted" to="/centro-de-aprendizaje">Centro de aprendizaje</Link></li>
+                        <li><Link className="text-muted" to="/cole">Colección</Link></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
                     <h5>Envíos</h5>
                     <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#">Condiciones de envío</a></li>
-                        <li><a className="text-muted" href="#">Información de pedido</a></li>
+                        <li><Link className="text-muted" to="/condiciones-de-envio">Condiciones de envío</Link></li>
+                        <li><Link className="text-muted" to="/">Información de pedido</Link></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
                     <h5>Información</h5>
                     <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#"></a></li>
-                        <li><a className="text-muted" href="#">Terminos y condiciones</a></li>
+                        <li><Link to="/condiciones-de-envio" className="text-muted" >Terminos y condiciones</Link></li>
                     </ul>
                 </div>
             </div>

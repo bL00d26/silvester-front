@@ -1,11 +1,16 @@
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function ShoppingCart() {
+    useEffect(() => {
+        let elem: any = document.getElementById("shoppingcart");
+        window.scrollTo(elem.offsetLeft, elem?.offsetTop);
+    }, [])
     return (
         <Container className="shoppingCart">
 
-            <div className="cart-wrap">
+            <div id="shoppingcart" className="cart-wrap">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
@@ -99,9 +104,7 @@ export default function ShoppingCart() {
                                     </form>
                                 </div>
                             </div>
-                            {/* /.table-cart */}
                         </div>
-                        {/* /.col-lg-8 */}
                         <div className="col-lg-4">
                             <div className="cart-totals">
                                 <h3>Detalle del pedido</h3>
@@ -123,15 +126,14 @@ export default function ShoppingCart() {
                                         </tbody>
                                     </table>
                                     <div className="btn-cart-totals">
-                                        <Link to="/detalles-del-pedido" className="checkout round-black-btn" >Realizar pedido</Link>
+                                        <Link
+                                            // to="/detalles-del-pedido"
+                                            to="/auth/signup"
+                                            className="checkout round-black-btn" >Realizar pedido</Link>
                                     </div>
-                                    {/* /.btn-cart-totals */}
                                 </form>
-                                {/* /form */}
                             </div>
-                            {/* /.cart-totals */}
                         </div>
-                        {/* /.col-lg-4 */}
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ main {
 }
 
 .termsAndFaq {
-  font-size: 15px!important;
+  font-size: 15px !important;
   .terms {
     background: #4dd875;
     border-radius: 20px;
@@ -701,6 +701,9 @@ main {
   cursor: pointer;
   img {
     z-index: 1;
+    position: relative;
+    left: -3px;
+    bottom: -3px;
   }
   small {
     background: #0bad5c;
@@ -709,14 +712,14 @@ main {
     right: 6px;
     padding: 1px;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     z-index: 1;
   }
 }
@@ -732,4 +735,28 @@ main {
 }
 .main-content {
   padding-bottom: 10px;
+}
+
+.login-page,
+.register-page {
+  position: absolute;
+  inset: 0 !important;
+  z-index: 999999999;
+  min-height: 100vh !important;
+  justify-content: flex-start !important;
+
+  .register-box,
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.register-page {
+  .register-box {
+    max-width: 900px;
+    width: 95%;
+  }
 }
